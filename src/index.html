@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="../dist/output.css"
+    />
+    <title>Login</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="max-w-md mx-auto my-12 bg-white p-6 rounded-md shadow-md">
+      <h2 class="text-xl font-bold mb-4">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2"
+            >Email</label
+          >
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="border border-gray-400 p-2 w-full rounded-md"
+          />
+          <div id="email-text"></div>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-bold mb-2"
+            >Password</label
+          >
+          <input
+            id="password"
+            type="password"
+            name="password"
+            class="border border-gray-400 p-2 w-full rounded-md"
+          />
+          <div id="password-text">
+            <div id="pass-uppercase" class="false"></div>
+            <div id="pass-lowercase" class="false"></div>
+            <div id="pass-number" class="false"></div>
+          </div>
+        </div>
+        <button
+          id="btn"
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Login
+        </button>
+      </form>
+      <p class="mt-4">
+        Don't have an account?
+        <a href="register.html" class="text-blue-500 font-bold">Sign up</a>
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

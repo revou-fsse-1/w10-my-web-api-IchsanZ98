@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up Form</title>
+    <link
+      rel="stylesheet"
+      href="../dist/output.css"
+    />
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="max-w-md mx-auto my-12 bg-white p-6 rounded-md shadow-md">
+      <h2 class="text-2xl font-bold mb-6">Sign Up</h2>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2"
+            >Email</label
+          >
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="border rounded-lg py-2 px-3 w-full"
+            required
+          />
+          <p id="email-text"></p>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-bold mb-2"
+            >Password</label
+          >
+          <input
+            id="password"
+            type="password"
+            name="password"
+            class="border rounded-lg py-2 px-3 w-full"
+            required
+          />
+          <div class="flex justify-between mt-1">
+            <p id="pass-uppercase" class="text-sm"></p>
+            <p id="pass-lowercase" class="text-sm"></p>
+            <p id="pass-number" class="text-sm"></p>
+          </div>
+          <p id="password-text"></p>
+        </div>
+        <div class="mb-4">
+          <label
+            for="password-confirm"
+            class="block text-gray-700 font-bold mb-2"
+            >Confirm Password</label
+          >
+          <input
+            id="password-confirm"
+            type="password"
+            name="password-confirm"
+            class="border rounded-lg py-2 px-3 w-full"
+            required
+          />
+          <p id="pass-confirm"></p>
+        </div>
+        <div class="mt-8">
+          <button
+            id="btn"
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white rounded-lg py-2 px-6"
+          >
+            Create Account
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

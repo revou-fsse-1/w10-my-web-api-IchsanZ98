@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Table CRUD Page</title>
+  </head>
+  <body>
+    <h1>Table CRUD Page</h1>
+    <form id="form">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="text" name="phonenumber" id="phonenumber" />
+      </div>
+      <div>
+        <label for="datebirth">Date of Birth:</label>
+        <input type="date" name="datebirth" id="datebirth" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button type="submit">Add Item</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Date of Birth</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script src="yo.js"></script>
+  </body>
+</html>
